@@ -15,10 +15,10 @@ echo "現在時刻は " . $current_time . " です。;
 // Q4 条件分岐-1 if文
 $device = 'windows';
 if ($device === 'windows' || $device === 'mac') {
-    echo '使用OSは、' . "$device" . 'です。';
+	echo '使用OSは、' . "$device" . 'です。';
 } else {
-    echo 'どちらでもありません';
- }
+	echo 'どちらでもありません';
+}
 
 // Q5 条件分岐-2 三項演算子
 $age = 18;
@@ -31,7 +31,18 @@ $prefectures = ['東京都','千葉県','埼玉県','神奈川県','群馬県','
 echo "$prefectures[5]" . 'と' . "$prefectures[1]" . 'は関東地方の都道府県です。';
 
 // Q7 連想配列-1
-
+$region = [
+	'東京都' => '新宿区',
+	'神奈川県' => '横浜市',
+	'千葉県' => '千葉市',
+	'埼玉県' => 'さいたま市',
+	'栃木県' => '宇都宮市',
+	'群馬県' => '前橋市',
+	'茨城県' => '水戸市',
+];
+foreach ($region as $prefecture => $city){
+echo $region[$prefecture]. "\n";
+}
 
 // Q8 連想配列-2
 
