@@ -61,7 +61,24 @@ foreach ($region as $prefecture => $city) {
 }
 
 // Q9 連想配列-3
+$region = [
+	'東京都' => '新宿区',
+	'神奈川県' => '横浜市',
+	'千葉県' => '千葉市',
+	'埼玉県' => 'さいたま市',
+	'栃木県' => '宇都宮市',
+	'群馬県' => '前橋市',
+	'茨城県' => '水戸市',
+];
+$region['愛知県'] = '名古屋市';
+$region['大阪府'] = '大阪市';
 
+foreach ($region as $prefecture => $city) {
+	if(in_array($prefecture,array('東京都','神奈川県','千葉県','埼玉県','栃木県','群馬県','茨城県'))){
+		echo "$prefecture" . 'の県庁所在地は' . "$city" . 'です' . "\n";
+	}else{
+		echo "$prefecture" . 'は関東地方ではありません' . "\n";}
+}
 
 // Q10 関数-1
 
