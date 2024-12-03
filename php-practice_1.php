@@ -88,6 +88,7 @@ function hello($name) {
 hello('金谷');
 hello('安藤');
 
+
 // Q11 関数-2
 function calcTaxInPrice($price) {
 	$taxInPrice = $price * 1.1;
@@ -98,7 +99,15 @@ echo $price . '円の商品の税込価格は' . calcTaxInPrice($price) . '円�
 
 
 // Q12 関数とif文
-
+function distinguishNum($number) {
+	if ($number % 2 == 0) {
+	return "は偶数です。";
+	}else {
+	return "は奇数です。";
+}
+}
+$number = 11;
+echo $number . distinguishNum($number);
 
 // Q13 関数とswitch文
 
