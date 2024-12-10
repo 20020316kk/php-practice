@@ -40,7 +40,14 @@ foreach ($personalInfos as $id => $detail) {
         echo  $id +1 . '番目の' . $detail['name'] . 'のメールアドレスは' . $detail['mail'] . 'で、電話番号は' . $detail['tel'] . 'です。'. "\n";
 }
 
+//Q2-3
+$ageList = [25, 30, 18];
 
+foreach($personalInfos as $id =>& $detail){
+  $detail["age"] = $ageList[$id];
+}
+unset($detail);
+var_dump($personalInfos);
 
 
 // Q3 オブジェクト-1
