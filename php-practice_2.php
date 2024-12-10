@@ -72,7 +72,26 @@ $yamada = new Student(120, '山田');
 echo '学籍番号' . $yamada->studentId . '番の生徒は' . $yamada->studentName . 'です。';
 
 // Q4 オブジェクト-2
+class Student
+{
+    public $studentId;
+    public $studentName;
+    public $studentlesson;
 
+    public function __construct($id, $name)
+    {
+        $this->studentId = $id;
+        $this->studentName = $name;
+    }
+
+    public function attend($lesson)
+    {
+            echo $this->studentName . 'は' . $lesson . 'の授業に参加しました。' . '学籍番号：' . $this->studentId;
+    }
+}
+
+$yamada = new Student(120, '山田');
+$yamada->attend('PHP');
 
 // Q5 定義済みクラス
 ?>
