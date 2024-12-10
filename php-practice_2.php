@@ -34,13 +34,17 @@ $personalInfos = [
 echo "{$personalInfos [1]['name']}" . 'の電話番号は' . "{$personalInfos [1]['tel']}" . 'です。';
 
 //Q2-2
-
-
+foreach ($personalInfos as $id => $detail) {
+  //var_dump($id);
+  //var_dump($detail);
+        echo  $id +1 . '番目の' . $detail['name'] . 'のメールアドレスは' . $detail['mail'] . 'で、電話番号は' . $detail['tel'] . 'です。'. "\n";
+}
 
 
 
 
 // Q3 オブジェクト-1
+
 
 
 // Q4 オブジェクト-2
