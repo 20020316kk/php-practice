@@ -99,4 +99,9 @@ $date = new DateTime("2024/12/18");
 $date->modify('-1 month');
 echo $date->format('Y-m-d');
 
+//5-2
+$now = new DateTime();
+$past = new DateTime('1992-04-25');
+$difference = $past->diff($now);
+echo $difference->format('あの日から%a日経過しました。');
 ?>
