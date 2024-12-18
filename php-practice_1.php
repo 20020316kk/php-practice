@@ -10,7 +10,7 @@ echo $num /= 2;
 
 // Q3 日付操作
 $current_time = date("Y-m-d H:i:s");
-echo "現在時刻は " . $current_time . " です。;
+echo "現在時刻は " . $current_time . " です。";
 
 // Q4 条件分岐-1 if文
 $device = 'windows';
