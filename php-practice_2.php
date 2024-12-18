@@ -30,17 +30,17 @@ $personalInfos = [
       'tel'  => '09055556666'
   ],
 ];
-//Q2-1
+//2-1
 echo "{$personalInfos [1]['name']}" . 'の電話番号は' . "{$personalInfos [1]['tel']}" . 'です。';
 
-//Q2-2
+//2-2
 foreach ($personalInfos as $id => $detail) {
   //var_dump($id);
   //var_dump($detail);
         echo  $id +1 . '番目の' . $detail['name'] . 'のメールアドレスは' . $detail['mail'] . 'で、電話番号は' . $detail['tel'] . 'です。'. "\n";
 }
 
-//Q2-3
+//2-3
 $ageList = [25, 30, 18];
 
 foreach($personalInfos as $id =>& $detail){
@@ -94,4 +94,9 @@ $yamada = new Student(120, '山田');
 $yamada->attend('PHP');
 
 // Q5 定義済みクラス
+//5-1
+$date = new DateTime("2024/12/18");
+$date->modify('-1 month');
+echo $date->format('Y-m-d');
+
 ?>
